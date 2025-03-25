@@ -1,5 +1,7 @@
+@import url('variable.css');
+
 body {
-    background-color: #141414;
+    background-color: var(--bg-color-body);
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -12,19 +14,17 @@ header {
     background-color: #0b7fef;
     padding: 20px;
     font-size: 1.8em;
+    color: var(--text-color)
 }
 
 main {
     max-width: 900px;
-    background-color: #222222;
+    background-color: var(--bg-color-container);
     border-radius: 5px;
     box-shadow: 0 0 5px #222;
     margin: 20px auto;
     padding: 20px;
-}
-
-button {
-    
+    color: var(--text-color)
 }
 
 #initial-image {
@@ -67,7 +67,7 @@ section.buttons > button:hover {
 }
 
 .card {
-    background-color: #414040;
+    background-color: var(--bg-color-container);
     width: 250px;
     box-shadow: 0 0 10px #414040;
     border-radius: 10px;
@@ -79,6 +79,14 @@ section.buttons > button:hover {
     border-radius: 10px;
     text-align: center;
     margin-top: 10px;
+}
+
+#mode {
+    width: 50px;
+    height: 30px;
+    background-color: var(--bg-color-container);
+    border-radius: 15px;
+    margin-left: 90%;
 }
 
 @media (max-width: 600px) {
