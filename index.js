@@ -31,12 +31,14 @@ function carregarTema() {
 
 function alterarTema() {
     const button = document.getElementById("mode");
+    const closeModalButton = document.querySelector(".fechar");
     button.addEventListener("click", function () {
         const tema = document.body.getAttribute("data-theme");
         const novoTema = tema === "dark" ? "light" : "dark";
         localStorage.setItem("tema", novoTema);
         document.body.setAttribute("data-theme", novoTema);
         button.textContent = novoTema === "dark" ? "🌙" : "🌞";
+        closeModalButton.style.color = novoTema === "dark" ? "#fff" : "#000";
     });
 }
 
