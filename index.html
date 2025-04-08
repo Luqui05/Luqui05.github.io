@@ -9,7 +9,8 @@
     <body data-theme="dark">
         <header>
             <button id="mode">🌙/🌞</button>
-            <h1>SETIF 2025 - Semana de Tecnologia da Informação</h1>
+            <h1 id="titulo" tabindex="0" data-i18n="titulo">SETIF 2025 - Semana de Tecnologia da Informação</h1>
+            <button aria-label="Botão para alterar o idioma" onclick="alterarIdioma()">PT/EN</button>
         </header>
         <main>
             <img
@@ -17,12 +18,12 @@
                 alt="Banner inicial do site"
                 id="initial-image"
             />
-            <h2>O event TECH mais esperado do ano</h2>
+            <h2 data-i18n="titulo-evento" aria-labelledby="titulo">O evento TECH mais esperado do ano</h2>
             <p>
                 Participe da SETIF 2025 e descubra as tendências que vão moldar
                 o futuro da tecnologia
             </p>
-            <p><span class="negrito">Data: </span> 10 de Outubro de 2025</p>
+            <p><span class="negrito" data-i18n="data">Data: </span> 10 de Outubro de 2025</p>
             <p><span class="negrito">Local: </span> IFPR Campus Paranavaí</p>
 
             <section class="buttons">
@@ -36,6 +37,7 @@
                     <img
                         src="images/workshop.jpg"
                         alt="Pessoas conversando em uma mesa"
+                        data-18n-alt="imagem-setif"  
                         id="card-image"
                     />
                     <h3>Palestras Inspiradoras</h3>
@@ -48,6 +50,7 @@
                     <img
                         src="images/workshop.jpg"
                         alt="Pessoas conversando em uma mesa"
+                        data-18n-alt="imagem-setif"  
                         id="card-image"
                     />
                     <h3>Networking de Alto Nível</h3>
@@ -60,6 +63,7 @@
                     <img
                         src="images/workshop.jpg"
                         alt="Pessoas conversando em uma mesa"
+                        data-18n-alt="imagem-setif"  
                         id="card-image"
                     />
                     <h3>Palestras Inspiradoras</h3>
